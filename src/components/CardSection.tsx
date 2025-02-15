@@ -9,21 +9,20 @@ const CardSection = () => {
       description:
         "Transform your business with cutting-edge digital solutions. Our innovative approach combines the latest technology with strategic thinking to drive growth and efficiency.",
       image: "/api/placeholder/600/400",
-      buttonText: "Learn More",
     },
     {
       title: "Cloud Solutions",
       description:
         "Scale your infrastructure seamlessly with our cloud-first approach. Get flexible, secure, and cost-effective solutions that grow with your business needs.",
       image: "/api/placeholder/600/400",
-      buttonText: "Explore Services",
+
     },
     {
       title: "Data Analytics",
       description:
         "Turn your data into actionable insights. Our advanced analytics solutions help you make better decisions and uncover new opportunities for growth.",
       image: "/api/placeholder/600/400",
-      buttonText: "View Analytics",
+
     },
   ];
 
@@ -40,7 +39,7 @@ const CardSection = () => {
               {/* Image Section */}
               <div className="w-full md:w-1/2">
                 <img
-                  src={card.image}
+                  src="https://img.freepik.com/premium-photo/3d-rising-bar-graph-isolated-yellow-background-business-growing-bars-4-step-up-financial-chart-3d-rendering_1014754-8472.jpg"
                   alt={card.title}
                   className="w-full h-64 md:h-96 object-cover"
                 />
@@ -53,7 +52,6 @@ const CardSection = () => {
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     {card.description}
                   </p>
-                  <Button>{card.buttonText}</Button>
                 </div>
               </div>
             </div>
