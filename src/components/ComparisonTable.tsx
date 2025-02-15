@@ -18,7 +18,7 @@ const ComparisonTable = () => {
     "Unlimited Receipt Processing",
   ];
 
-  const availability = {
+  const availability: { [key: string]: boolean[] } = {
     Ayush: [true, true, true, true, true, false, false, false, false, false],
     Vaibhav: [true, true, true, true, true, true, true, false, false, false],
     Aman: [true, true, true, true, true, true, true, true, true, true],
